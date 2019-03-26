@@ -1,4 +1,4 @@
-package com.product.servlet;
+package com.product;
 
 import java.sql.Connection;
 
