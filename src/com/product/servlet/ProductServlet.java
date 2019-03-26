@@ -27,8 +27,8 @@ public class ProductServlet extends HttpServlet {
 		
 		if(pid1!=null && price1.trim()!="" && name.trim()!=""){
 			ProductDb db=new ProductDb();
-			boolean b=db.checkProductDetails(pid);
-			if(b==true) {
+			boolean b =db.checkProductDetails(pid);
+			if(!b) {
 				Connection con=null;
 				try {
 					Class.forName("com.mysql.jdbc.Driver");

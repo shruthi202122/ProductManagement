@@ -20,11 +20,11 @@ public class ProductDb {
 			
 			if(rs.next()) {
 				System.out.println("Product already existed in db");
-			    i=false;
+			    i=true;
 			}
 			else {
 				System.out.println("new product");
-				 i=true;
+				 i=false;
 				 return i;
 			}
 		}
