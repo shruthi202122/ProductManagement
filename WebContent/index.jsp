@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="view/validations.js"></script>
+<script type="text/javascript" src="jsFolder/validations.js"></script>
 <style>
 body{
 	background-color:"lightblue";
