@@ -19,4 +19,14 @@
     <servlet-name>ProductServlet</servlet-name>
     <url-pattern>/ProductServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InsertProductServlet</display-name>
+    <servlet-name>InsertProductServlet</servlet-name>
+    <servlet-class>com.product.servlet.InsertProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertProductServlet</servlet-name>
+    <url-pattern>/Insert</url-pattern>
+  </servlet-mapping>
 </web-app>
