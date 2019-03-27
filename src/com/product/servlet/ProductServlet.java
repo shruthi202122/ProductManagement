@@ -2,12 +2,11 @@ package com.product.servlet;
 
 import java.io.IOException;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.product.InsertProduct;
 import com.product.ProductDb;
 public class ProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -28,15 +27,14 @@ public class ProductServlet extends HttpServlet {
 			ProductDb db=new ProductDb();
 			boolean isProductExists =db.checkProductDetails(pid);
 			if(!isProductExists) {
-				InsertProduct insertProduct=new InsertProduct();
-				boolean insertion=insertProduct.insertProductDetails(pid,name,price);
-				if(insertion) {
+				boolean isProductinserted=db.insertProductDetails(pid,name,price);
+				if(isProductinserted) { 
 					request.setAttribute("pid",pid);
 					request.setAttribute("name",name);
 					request.setAttribute("price",price);
 					request.getRequestDispatcher("/view/successmsg.jsp").include(request,response);
 				}
-				
+				 
 			}
 			else {
 				request.setAttribute("errmsg","Trying to insert duplicate values");
