@@ -2,16 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-h1{ 
-text-align:center;
-color:red;
- 
-}
-</style>
-</head>
-<body style="background-color:lightblue;">
+<body>
 <h1>ProductManagement</h1>
 
 </body>

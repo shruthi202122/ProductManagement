@@ -4,15 +4,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
 <script type="text/javascript" src="js/validations.js"></script>
-<style>
-body{
-	background-color:"lightblue";
-}
-div{
-color:red;
-}
-</style>
+
+
 </head>
 <body>
 <%@ include file="view/header.jsp" %>

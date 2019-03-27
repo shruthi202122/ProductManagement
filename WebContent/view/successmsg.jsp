@@ -4,15 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body{
-	background-color:"lightblue";
-}
-h2{
-color:blue;
-}
-</style>
-</head>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
 <%@ include file="header.jsp" %>
